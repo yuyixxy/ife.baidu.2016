@@ -1,10 +1,12 @@
 <!doctype html>
 <html lang="zh-cn">
+
 <head>
     <meta charset="utf-8">
-    <title>ife.baidu task02 零基础HTML及CSS编码（一）</title>
+    <title>零基础HTML及CSS编码（一） ife.baidu task02</title>
     <link href="task02.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
     <header>
         <h1>网站一级标题</h1>
@@ -43,19 +45,21 @@
             <li>项目列表2</li>
             <li>项目列表3</li>
         </ul>
+    </article>
+    <article>
         <h3>图片</h3>
         <div>
-            <p>好看的图片<br><img src="great_wall.jpg"></p>
-            <p>好看的图片<br><img src="great_wall.jpg"></p>
-            <p>好看的图片<br><img src="great_wall.jpg"></p>
-            <p>好看的图片<br><img src="great_wall.jpg"></p>
-            <p>好看的图片<br><img src="great_wall.jpg"></p>
-            <p>好看的图片<br><img src="great_wall.jpg"></p>
-            <p>好看的图片<br><img src="great_wall.jpg"></p>
-            <p>好看的图片<br><img src="great_wall.jpg"></p>
-            <p>好看的图片<br><img src="great_wall.jpg"></p>
-            <p>好看的图片<br><img src="great_wall.jpg"></p>
-        </div>
+            <div class="greet-pictures"><span>好看的图片</span><img src="great_wall.jpg"></div>
+            <div class="greet-pictures"><span>好看的图片</span><img src="great_wall.jpg"></div>
+            <div class="greet-pictures"><span>好看的图片</span><img src="great_wall.jpg"></div>
+            <div class="greet-pictures"><span>好看的图片</span><img src="great_wall.jpg"></div>
+            <div class="greet-pictures"><span>好看的图片</span><img src="great_wall.jpg"></div>
+            <div class="greet-pictures"><span>好看的图片</span><img src="great_wall.jpg"></div>
+            <div class="greet-pictures"><span>好看的图片</span><img src="great_wall.jpg"></div>
+            <div class="greet-pictures"><span>好看的图片</span><img src="great_wall.jpg"></div>
+            <div class="greet-pictures"><span>好看的图片</span><img src="great_wall.jpg"></div>
+            <div class="greet-pictures"><span>好看的图片</span><img src="great_wall.jpg"></div>
+            </div>
     </article>
     <article>
         <h2>最后一篇文章一级标题</h2>
@@ -66,12 +70,12 @@
             <li>排名2</li>
             <li>排名3</li>
         </ol>
-        下面是一个表格，给表格加一个border="1"好看出是一个表格
+        <span>下面是一个表格，给表格加一个border="1"好看出是一个表格</span>
         <table border="1">
             <tr>
-                <td>表头</td>
-                <td>表头</td>
-                <td>表头</td>
+                <th>表头</th>
+                <th>表头</th>
+                <th>表头</th>
             </tr>
             <tr>
                 <td>表内容单元格</td>
@@ -93,7 +97,7 @@
                 <td>表内容单元格</td>
                 <td><a href="">操作</a></td>
             </tr>
-            <tr>
+            <tr class="buttomTable">
                 <td>总计</td>
                 <td colspan="2">1000</td>
             </tr>
@@ -101,23 +105,41 @@
     </article>
     <aside>
         <h2>这里以后是一个侧栏，这是侧栏的标题</h2>
-        <h2>侧栏注册窗口标题</h2>
-        <p>请输入邮箱地址：<input type="text"></p>
-        <p>邮箱地址请按要求格式输入</p>
-        <p>请输入密码：<input type="password">请重复输入密码：<input type="password"></p>
-        <p>密码请为6-16位英文数字</p>
-        <p>
-        性别：<input type="radio" checked>男<input type="radio">女
-        城市：<select>
-            <option value="北京">北京</option>
-            <option value="上海">上海</option>
-            <option value="深圳">深圳</option>
-        </select>
-        爱好：<input type="checkbox">运动<input type="checkbox">艺术<input type="checkbox">科学
-        个人描述：<textarea name="comment" placeholder="请输入个人描述 "></textarea>
-        <input type="submit" value="确认提交">
-        </p>
-        <span class="copyright">版权所有&copy;<span>
+        <form action="#" method="post">
+            <div>
+                <label for="email">请输入邮箱地址</label>
+                <input type="text" placeholder="请输入邮箱" name="email">
+                <p>邮箱地址请按要求格式输入</p>
+            </div>
+            <div>
+                <label for="password">请输入密码</label>
+                <input type="password" placeholder="请输入密码" name="password">
+                <label for="re-password">请重复输入密码</label>
+                <input type="password" placeholder="请重复输入密码" name="re-password">
+                <p>密码请为6-16位英文数字</p>
+            </div>
+            <div>
+                <label for="sex">性别：</label>
+                <input type="radio" checked>男
+                <input type="radio">女
+                <label for="city">城市：</label>
+                <select>
+                    <option value="北京">北京</option>
+                    <option value="上海">上海</option>
+                    <option value="深圳">深圳</option>
+                </select>
+            </div>
+            <div>
+                <label for="favorite">爱好：</label>
+                <input type="checkbox">运动
+                <input type="checkbox">艺术
+                <input type="checkbox">科学
+                <label for="person-description">个人描述：</label>
+                <textarea name="comment" placeholder="请输入个人描述 "></textarea>
+            </div>
+            <input type="submit" class="submitButton" value="确认提交">
     </aside>
+     <div class="footer">版权所有&copy;</div>
 </body>
+
 </html>
